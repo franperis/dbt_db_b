@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: cleaned_items
+    description: Cleansed table
+    columns:
+      - name: id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+
+      - name: name
+        description: Item name
+      
+      - name: description
+        description: Item description
+
+      - name: price
+        description: Item price
+      
+      - name: created_at
+        description: Item creation date
+
+      - name: _airbyte_normalized_at
+        description: Airbyte replication datatime
