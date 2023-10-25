@@ -14,6 +14,7 @@ select
     name,
     description,
     price,
+    '$' || price as price_in_dollars,
     created_at,
     _airbyte_normalized_at
 from

@@ -18,6 +18,9 @@ models:
 
       - name: price
         description: Item price
+
+      - name: price_in_dollars
+        description: Price in dollars
       
       - name: created_at
         description: Item creation date
